@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_button"
+    android:backgroundTint="@color/white2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="Edit Message "
+                android:textColor="@color/main_color"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_cardview"
+                android:padding="5dp"
+                app:ccp_backgroundColor="#dcf7c5"
+                app:ccp_countryPreference="PK"
+                app:ccp_defaultNameCode="PK"
+                app:ccp_enablePhoneAutoFormatter="false"
+                app:ccp_textColor="@color/text_color" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv124"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Write Your Message:"
+            android:textColor="@color/main_color" />
+
+        <!-- <EditText
+             android:id="@+id/etmessageedit"
+             android:layout_width="match_parent"
+             android:layout_height="70dp"
+             android:background="@drawable/rounded_edittext"
+             android:layout_marginStart="16dp"
+             android:layout_marginTop="5dp"
+             android:layout_marginEnd="16dp"
+             android:hint="Enter Text"
+             android:layout_gravity="center"
+             android:textColor="@color/edt_txt_color"
+             android:textColorHint="@color/edt_txt_color"
+             android:layout_marginBottom="5dp"
+             android:gravity="top|left|center_vertical|center_horizontal|center"
+             android:padding="13dp"
+             android:textSize="14sp" />-->
+        <EditText
+            android:id="@+id/etmessageedit"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/white"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center|start"
+            android:hint="Enter Text"
+            android:paddingLeft="15dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/gray"
+            android:textCursorDrawable="@drawable/cursur_drawable"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ln_cancel"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/dot_purple_bg"
+                android:backgroundTint="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:gravity="center"
+                    android:text="CANCEL"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_save"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/dot_purple_bg"
+                android:backgroundTint="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:gravity="center"
+                    android:text="SAVE"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

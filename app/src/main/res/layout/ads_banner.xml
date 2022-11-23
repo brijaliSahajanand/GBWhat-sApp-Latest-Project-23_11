@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlBanner"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="@color/bg_item">
+
+
+    <LinearLayout
+        android:id="@+id/bannerLL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@color/bg_item"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" />
+
+    <!--<LinearLayout
+        android:layout_marginStart="@dimen/_minus10sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:background="@drawable/close_bg"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Ads"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/qurekaLL1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:visibility="visible">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/iv_round_gif"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/round5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:text="AD"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_7sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_text_ad_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Play &amp; Win Coins"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_text_ad_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Win 5,00,000 Coins &amp; More"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/playNowLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="@color/black">
+
+            <TextView
+                android:id="@+id/tv_playnow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="PLAY NOW"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

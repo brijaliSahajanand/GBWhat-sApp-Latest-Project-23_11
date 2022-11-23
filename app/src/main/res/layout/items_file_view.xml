@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:orientation="vertical"
+    android:tag="layout/items_file_view_0">
+
+    <RelativeLayout
+        android:id="@+id/rl_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_centerInParent="true"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitXY"
+            app:riv_border_color="@color/colorPrimaryDark"
+            app:riv_border_width="4dip"
+            app:riv_corner_radius="20dip"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+        <ImageView
+            android:id="@+id/ivCameraIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_play"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_downloading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_download"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <!-- <com.tuyenmonkey.mkloader.MKLoader
+             android:id="@+id/mkloaderReg"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:visibility="visible"
+             app:mk_color="@color/colorPrimaryDark"
+             app:mk_type="TwinFishesSpinner" />-->
+
+        <ImageView
+            android:id="@+id/iv_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/download_wa"
+            android:visibility="visible"
+            app:tint="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="0 %"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.newfastwa.msgemojitype.gbfo.utils.Header
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleText="Emojis To Text" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:overScrollMode="ifContentScrolls"
+            android:paddingBottom="100dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Your Text"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputWord"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/bg_button"
+                        android:backgroundTint="@color/bg_item"
+                        android:gravity="center"
+                        android:hint="Enter Text"
+                        android:textColorHint="@color/gray"
+                        app:boxBackgroundColor="@color/white"
+                        app:hintEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/eTWord"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:inputType="textMultiLine"
+                            android:maxLines="10"
+                            android:minHeight="50dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Your Text"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputEmoji"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/bg_button"
+                        android:backgroundTint="@color/bg_item"
+                        android:hint="Enter Emoji"
+                        android:textColorHint="@color/gray"
+                        app:boxBackgroundColor="@color/white"
+                        app:hintEnabled="true">
+
+                        <com.newfastwa.msgemojitype.gbfo.utils.MyEmojiEditText
+                            android:id="@+id/eTEmoji"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:inputType="text"
+                            android:maxLength="3"
+                            android:minHeight="50dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <include layout="@layout/layout_native_ads" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvThickness"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Thickness"
+                            android:textColor="@color/text_color"
+                            android:textSize="15sp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvThicknessNormal"
+                                    android:layout_width="@dimen/_110sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/bg_select"
+                                    android:fontFamily="@font/poppins_semi_bold"
+                                    android:gravity="center"
+                                    android:text="Normal"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tvThicknessThin"
+                                    android:layout_width="@dimen/_110sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/bg_unselect"
+                                    android:fontFamily="@font/poppins_semi_bold"
+                                    android:gravity="center"
+                                    android:text="Bold"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_emojis_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/rounded_cardview"
+                    android:backgroundTint="@color/bg_item"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="center"
+                        android:text="Current Emoji: "
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+
+                    <EditText
+                        android:id="@+id/eTResultEmoji"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:padding="16dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ic_whats_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@drawable/ic_whats_share_emojis"
+                            android:backgroundTint="@color/black"/>
+
+
+                        <ImageView
+                            android:id="@+id/iv_delete_emojis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@drawable/ic_delete_emojis"
+                            android:backgroundTint="@color/black"/>
+
+                        <ImageView
+                            android:id="@+id/iv_copy_emojis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@drawable/ic_copy_emojis"
+                            android:backgroundTint="@color/black"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/bg_button"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tVGenerate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="center"
+                        android:text="Generate"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <include layout="@layout/layout_native_banner_ads" />
+    </LinearLayout>
+</RelativeLayout>

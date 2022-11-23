@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical"
+    tools:context=".VPN.Privacy_Policy_Screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_qureka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:adjustViewBounds="true"
+                android:gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/round3"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:text="AD"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:text="Privacy Policy"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_15sdp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_qureka_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:adjustViewBounds="true"
+                android:gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/round5"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:text="AD"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+        <!-- <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/app_font"
+             android:text="Policy"
+             android:textColor="@color/gray"
+             android:textSize="@dimen/_16sdp" />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/txt_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/txt_color" />
+        </ScrollView>
+        <!-- <WebView
+             android:id="@+id/pp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/next"
+             android:layout_weight="1"
+             android:padding="@dimen/_10sdp"
+             android:textColor="#fff" />-->
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:text="Agree &amp; Next"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

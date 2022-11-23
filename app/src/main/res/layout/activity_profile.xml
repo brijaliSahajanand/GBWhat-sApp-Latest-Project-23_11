@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical"
+    tools:context=".activity.Profile.Profile_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.newfastwa.msgemojitype.gbfo.utils.Header
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleText="Search Profile" />
+
+        <!--<LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:padding="@dimen/_10sdp">
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/back_button" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="center"
+                android:text="Search Profile"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/_15sdp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_button"
+                android:padding="10dp"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_native_ads" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Phone Number"
+                        android:textColor="@color/txt_color"
+                        android:textSize="@dimen/_15sdp" />
+
+
+                    <EditText
+                        android:id="@+id/wNum"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_55sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/bg_button"
+                        android:backgroundTint="@color/bg_item"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="center|start"
+                        android:hint="Phone number (with country code)"
+                        android:inputType="phone"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/txt_color"
+                        android:textColorHint="@color/gray"
+                        android:textCursorDrawable="@drawable/cursur_drawable"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/ln_search_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/bg_button">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:gravity="center"
+                            android:text="Search Profile"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include layout="@layout/layout_native_banner_ads" />
+    </LinearLayout>
+</RelativeLayout>

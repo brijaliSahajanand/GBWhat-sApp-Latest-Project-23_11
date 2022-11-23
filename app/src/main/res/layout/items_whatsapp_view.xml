@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:max="http://schemas.applovin.com/android/1.0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="3dp"
+    android:tag="layout/items_whatsapp_view_0">
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_img"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@color/black"
+        app:riv_border_color="@color/colorPrimary"
+        app:riv_border_width="4dip"
+        app:riv_corner_radius="20dip"
+        app:riv_mutate_background="true"
+        app:riv_oval="false" />
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_play"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dip"
+        android:background="@drawable/bg_pic_back"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_margin="@dimen/_7sdp"
+            android:src="@drawable/download_wa" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:text="Download"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

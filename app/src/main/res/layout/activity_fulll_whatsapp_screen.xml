@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_imgvid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_ads_banner"
+            android:clipToPadding="false" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/back_button" />
+
+
+        <ImageView
+            android:id="@+id/iv_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_ads_banner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/ic_download"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_ads_banner"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"
+            android:paddingHorizontal="@dimen/_30sdp"
+            android:text="Download" />
+
+
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/layout_native_banner_ads" />
+
+</LinearLayout>

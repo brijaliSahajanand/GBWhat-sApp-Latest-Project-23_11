@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical"
+    tools:context=".activity.ThiredActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:src="@drawable/ic_content1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:lineSpacingExtra="3dp"
+                android:lineSpacingMultiplier="1.1"
+                android:text="It gives you a better Whats experience which you can control All Main Features like Profile, Emojis, Repeator etc..."
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.ads.adsdemosp.AdsView.quiz_Header_AdsView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_5sdp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_rate_us"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/app_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="Rate US"
+                        android:visibility="gone"
+                        android:textColor="@color/text_color"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.ads.adsdemosp.AdsView.quiz_Header_AdsView
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_native_ads" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/iv_nxt_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                    android:background="@drawable/bg_button"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <include layout="@layout/layout_native_banner_ads" />
+
+</LinearLayout>

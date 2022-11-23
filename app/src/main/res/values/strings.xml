@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">GB WhatsApp 2022</string>
+
+    <string name="switch_off">Connected</string>
+    <string name="switch_on">Not Connected</string>
+    <string name="disconnected">disconnected</string>
+
+    <string name="vpn_process_name" translatable="false">:vpn</string>
+
+    <!--    //new-->
+
+
+    <string name="spalsh_text">What is GB Whats?\n
+GB Whats is a clone app of Whats.\n
+Simply put, GB Whats allows third-party developers\n
+to create a customized clone app similar to Whats.</string>
+    <string name="already_downloader">Already Downloaded.</string>
+    <string name="share_txt">Hey view/download this image</string>
+    <string name="share_image_via">Share File via...</string>
+
+    <string name="instagram_not_installed">Instagram not installed.</string>
+    <string name="no_app_found">No application found to open this file.</string>
+    <string name="share_app_message">Download Video Downloader and Player.\nGreat Video Player App With Whatsapp Status Saver.\nDownload Now: </string>
+    <string name="second_ago"> sec ago</string>
+    <string name="minutes_ago"> min ago</string>
+    <string name="hours_ago"> hr ago</string>
+    <string name="day_ago"> day ago</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="logout_message">Do you want to Logout?</string>
+
+    <string name="txtwarn">Please Turn Off Developer Option and \n Enjoy App Continue.</string>
+
+
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical"
+    tools:context=".activity.Quick_REply.Activity_Quick_Reply">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.newfastwa.msgemojitype.gbfo.utils.Header
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleText="Quick Reply To Messages" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_native_ads" />
+
+
+                <RelativeLayout
+                    android:id="@+id/parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/tv_header_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="Messages : "
+                        android:textColor="@color/text_color"
+                        android:textSize="18dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_header_name"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/bg_button"
+                        android:backgroundTint="@color/bg_item"
+
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Hi, How Are You."
+                                android:textColor="@color/text_color"
+                                android:textSize="16dp" />
+
+                            <LinearLayout
+                                android:id="@+id/ln_act_edit_quickreply"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_edit_quick_reply"
+                                    android:backgroundTint="@color/text_color" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ln_act_copy_quickreply"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:padding="10dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_copy_editreply"
+                                    android:backgroundTint="@color/text_color" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_reply_messages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/ln_add_messages"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/bg_button"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ivaddnew"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="center"
+                android:text="Add Messages"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_native_banner_ads" />
+
+    </LinearLayout>
+
+</RelativeLayout>

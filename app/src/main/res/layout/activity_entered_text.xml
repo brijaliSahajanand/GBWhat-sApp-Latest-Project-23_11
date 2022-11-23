@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical"
+    tools:context=".activity.Font_style.Activity_Entered_Text">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.newfastwa.msgemojitype.gbfo.utils.Header
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleText="Entered Text" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fillViewport="true"
+            android:paddingBottom="@dimen/_20sdp"
+            android:clipToPadding="false"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ln_stylish_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Your Text"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15sdp" />
+
+
+                    <EditText
+                        android:id="@+id/wNum"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_55sdp"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/bg_button"
+                        android:backgroundTint="@color/bg_item"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="center|start"
+                        android:hint="Enter Text"
+                        android:inputType="phone"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/txt_color"
+                        android:textColorHint="@color/gray"
+                        android:textCursorDrawable="@drawable/cursur_drawable"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ln_generate_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_button"
+                        android:elevation="4dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:gravity="center"
+                            android:text="Generate"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_native_ads" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include layout="@layout/layout_native_banner_ads" />
+    </LinearLayout>
+</RelativeLayout>

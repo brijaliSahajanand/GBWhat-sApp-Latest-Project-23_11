@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical"
+    tools:context=".activity.Font_style.Activity_Stylish_share">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:background="@color/colorPrimary" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.newfastwa.msgemojitype.gbfo.utils.Header
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="Stylish Setting" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_native_ads" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/bg_item"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_selected_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:padding="@dimen/_20sdp"
+                    android:text="TEXT"
+                    android:gravity="center"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/_18sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ln_copy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_copy_stylish" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="Copy"
+                            android:textColor="@color/text_color"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ln_whatsapp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_direct_share_whats" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="Whatsapp"
+                            android:textColor="@color/text_color"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ln_more_share"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_copy_share" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="Share"
+                            android:textColor="@color/text_color"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/layout_native_banner_ads" />
+    </LinearLayout>
+</RelativeLayout>

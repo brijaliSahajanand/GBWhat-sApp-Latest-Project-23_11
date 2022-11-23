@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical"
+    tools:context=".activity.FirstActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/_10sdp">
+
+        <com.ads.adsdemosp.AdsView.quiz_Header_AdsView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_5sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="GB Lates Version"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <com.ads.adsdemosp.AdsView.quiz_Header_AdsView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_5sdp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:lineSpacingExtra="3dp"
+                    android:lineSpacingMultiplier="1.1"
+                    android:text="This GB Whats Version 2022 has been really successful as it incorporates some extra functions that have been historically demanded by the user."
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/bg_button"
+                    android:backgroundTint="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:paddingVertical="@dimen/_15sdp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <com.ads.adsdemosp.AdsView.quiz_Header_AdsView
+                            android:layout_width="wrap_content"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_privacy_app"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_privacy" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Privacy"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_share_app"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_share" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Share App"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_rate_us"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_rate_us" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Rate US"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <com.ads.adsdemosp.AdsView.quiz_Header_AdsView
+                            android:layout_width="wrap_content"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content" />
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_native_ads" />
+
+            <Button
+                android:id="@+id/iv_get_started"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/bg_button"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="Let's Start"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/layout_native_banner_ads" />
+
+</LinearLayout>

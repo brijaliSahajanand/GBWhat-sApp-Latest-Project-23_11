@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.newfastwa.msgemojitype.gbfo.utils.Header
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleText="Downloads" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swiperefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_nodata"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="center"
+                        android:text="No Result Found"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_15sdp"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_fileList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:scrollbars="vertical"
+                        android:visibility="gone"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:reverseLayout="false"
+                        app:spanCount="2"
+                        tools:listitem="@layout/items_file_view" />
+
+
+                </LinearLayout>
+
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_native_banner_ads" />
+    </LinearLayout>
+</RelativeLayout>
